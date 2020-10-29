@@ -13,23 +13,42 @@ body {
 	max-width: 100%;
 	margin: 0 auto;
 	padding: 0 50px;
+	position: relative;
+	z-index: 10;
+	color: white;
 }
 
 header.main {
 	position: relative;
-	height: 60vh;
-	background-color: green;
+	height: 75vh;
+	background-image: url(../img/hero.jpg);
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	position: relative;
+	z-index: 5;
 }
 
-header.main nav {
-
+header.main::after {
+	position: absolute;
+	content: '';
+	background-color: rgba(0,0,0,.7);
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
 }
+
+header.main nav {}
 
 figure {
 	margin-bottom: 30px;
 }
 
-header.main nav ul {
+nav ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -40,13 +59,13 @@ header.main nav ul {
 	height: 75px;
 }
 
-header.main nav ul li a img {
+nav ul li a img {
 	padding: 0 10px;
 	width: 150px;
 	max-width: 100%;
 }
 
-header.main nav ul li > a {
+nav ul li > a {
 	font-size: .8em;
 	letter-spacing: .07rem;
 	font-weight: bold;
@@ -58,25 +77,26 @@ header.main nav ul li > a {
 
 @media (max-width: 850px) {
 
-	header.main nav ul li > a {
+	nav ul li > a {
 		font-size: .7em;
 	}
 
-	header.main nav ul li a img {
+	nav ul li a img {
 		width: 100px;
 	}
 
 }
 
 .hero {
-	
+	display: flex;
+	justify-content: center;
+	align-content: center;
 }
 
 .hero .container {
-	height: 45vh;
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-content: center;	
 }
 
 .items {
