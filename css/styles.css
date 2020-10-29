@@ -178,10 +178,8 @@ footer {
 }
 
 
-/* ---- grid ---- */
-
-.grid {
-  background: #DDD;
+#gallery {
+	margin: 75px 0;
 }
 
 /* clear fix */
@@ -205,8 +203,12 @@ footer {
 .grid-item img {
   display: block;
   max-width: 100%;
+  transition: all 0.4s cubic-bezier(0.405, 0.07, 0.575, 0.995);
 }
 
+.grid-item img:hover {
+	opacity: .5;
+}
 
 
 
