@@ -1,0 +1,167 @@
+* { 
+	margin: 0; 
+	padding: 0; 
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	width: 80%;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+
+header.main {
+	position: relative;
+	height: 60vh;
+	background-color: green;
+}
+
+header.main nav {
+
+}
+
+figure {
+	margin-bottom: 30px;
+}
+
+header.main nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #e2e2e2;
+	height: 75px;
+}
+
+header.main nav ul li a img {
+	padding: 0 10px;
+	width: 150px;
+	max-width: 100%;
+}
+
+header.main nav ul li > a {
+	font-size: .8em;
+	letter-spacing: .07rem;
+	font-weight: bold;
+	margin: 0 .8rem;
+	text-transform: uppercase;
+	color: #181818;
+	text-decoration: none;
+}
+
+@media (max-width: 850px) {
+
+	header.main nav ul li > a {
+		font-size: .7em;
+	}
+
+	header.main nav ul li a img {
+		width: 100px;
+	}
+
+}
+
+.hero {
+	
+}
+
+.hero .container {
+	height: 45vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.blurb {
+	background-color: pink;
+	margin: 0;
+	padding: 100px 50px;
+	text-align: center;
+}
+
+.blurb h6 {
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: .07rem;
+}
+
+.blurb p {
+	font-size: 2rem;
+}
+
+@media (max-width: 850px) {
+	.blurb p {
+		font-size: 1.5rem
+	}
+}
+
+
+section#impulse {
+	margin: 100px 0;
+}
+
+section#impulse .container {
+	display: flex;
+	justify-content: center;
+}
+
+.impulse-item {
+	padding: 0 15px;
+}
+
+@media (max-width: 850px) {
+
+	section#impulse .container {
+		flex-direction: column;
+	}
+
+	section#impulse .container .impulse-item {
+		margin-bottom: 20px;
+	}
+
+}
+
+footer {
+	text-align: center;
+	background-color: orange;
+	padding: 20px 0;
+}
+
+.info {
+	margin: 30px auto;
+}
+
+.info h6 {
+	font-size: 1.5rem;
+}
+
+.info p {
+	margin-bottom: 15px;
+	font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
